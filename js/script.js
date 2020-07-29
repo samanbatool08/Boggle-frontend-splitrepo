@@ -181,7 +181,7 @@ window.addEventListener('DOMContentLoaded', function() {
             game_id: game_id
         }
 
-        fetch(`https://boggle-game-api.herokuapp.com/api/v1/${game_id}/submitted_words`, {
+        fetch(`https://boggle-game-api.herokuapp.com/api/v1/games/${game_id}/submitted_words`, {
                 method: "POST",
                 headers: {
                     'content-type': 'application/json',
