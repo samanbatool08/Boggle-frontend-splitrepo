@@ -71,6 +71,7 @@ window.addEventListener('DOMContentLoaded', function() {
                 })
                 .then(resp => resp.json())
                 .then(userData => {
+                    console.log(userData)
                     game_id = userData.id
                 })
         }
@@ -190,6 +191,7 @@ window.addEventListener('DOMContentLoaded', function() {
             })
             .then(resp => resp.json())
             .then(userData => {
+                console.log(userData)
                 let finalScore = userData.points
                 scoreSpan.innerText = finalScore
             })
