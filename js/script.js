@@ -61,7 +61,7 @@ window.addEventListener('DOMContentLoaded', function() {
             wordsContainer.style.visibility = 'visible'
             doneButton.style.visibility = 'visible'
             let username = e.target.parentNode.username.value
-            fetch('http://localhost:3000/api/v1/games', {
+            fetch('https://boggle-game-api.herokuapp.com/', {
                     method: "POST",
                     headers: {
                         'content-type': 'application/json',
@@ -180,7 +180,7 @@ window.addEventListener('DOMContentLoaded', function() {
             game_id: game_id
         }
 
-        fetch(`http://localhost:3000/api/v1/games/${game_id}/submitted_words`, {
+        fetch(`https://boggle-game-api.herokuapp.com/${game_id}/submitted_words`, {
                 method: "POST",
                 headers: {
                     'content-type': 'application/json',
